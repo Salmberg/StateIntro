@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+   //@State var count : Int = 0
+    @State var showSheet = false
+    @StateObject var counter = Counter()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+            Text("\(counter.count)")
+           
+            //Counting Button
+            Button(action: {
+                counter.inc()
+                print("\(counter.count)")
+                
+            }, label: {
+                Text("Tryck!")
+            })
+            
+            //Button to go to sheet
+            Button(action: {
+                showSheet = true
+            }, label: {
+                Text("Ny sida")
+            })
+            
+        }.sheet(isPresented: $showSheet, content: {
+          SheetView(counter: counter)
+            
+            
+        })
+    }
+}
+
+struct SheetView : View {
+   @ObservedObject var counter : Counter
+    
+    var body: some View {
+        Text("\(counter.count)")
+        
+        Button(action: {
+            counter.dec()        }, label: {
+            Text("Tryck igen!")
+        })
     }
 }
 

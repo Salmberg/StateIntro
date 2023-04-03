@@ -14,6 +14,7 @@
 		CBD0DF8D29DAD65A00DF0945 /* StateIntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DF8C29DAD65A00DF0945 /* StateIntroTests.swift */; };
 		CBD0DF9729DAD65A00DF0945 /* StateIntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DF9629DAD65A00DF0945 /* StateIntroUITests.swift */; };
 		CBD0DF9929DAD65A00DF0945 /* StateIntroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DF9829DAD65A00DF0945 /* StateIntroUITestsLaunchTests.swift */; };
+		CBD0DFA629DAD9ED00DF0945 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD0DFA529DAD9ED00DF0945 /* Counter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CBD0DF9229DAD65A00DF0945 /* StateIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD0DF9629DAD65A00DF0945 /* StateIntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateIntroUITests.swift; sourceTree = "<group>"; };
 		CBD0DF9829DAD65A00DF0945 /* StateIntroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateIntroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBD0DFA529DAD9ED00DF0945 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				CBD0DF7D29DAD65900DF0945 /* ContentView.swift */,
 				CBD0DF7F29DAD65A00DF0945 /* Assets.xcassets */,
 				CBD0DF8129DAD65A00DF0945 /* Preview Content */,
+				CBD0DFA529DAD9ED00DF0945 /* Counter.swift */,
 			);
 			path = StateIntro;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				CBD0DF7E29DAD65900DF0945 /* ContentView.swift in Sources */,
 				CBD0DF7C29DAD65900DF0945 /* StateIntroApp.swift in Sources */,
+				CBD0DFA629DAD9ED00DF0945 /* Counter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
